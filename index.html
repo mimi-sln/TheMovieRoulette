@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>   
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />      
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:300;wght@500;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/18795bf9d8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>The Movie Spin Wheel App</title>
+  </head>
+  <body>
+    <section class="spinningWheel">
+      <div class="wrapper">
+        <div class="container">
+          <canvas id="wheel"></canvas>
+          <button id="spin-btn">Spin</button>
+          <img class="imgSpin" src="assets/spinner-arrow.png" alt="spinner-arrow" />
+        </div>
+        <div id="final-value">
+          <p>Click On The Spin Button To Start</p>
+        </div>
+      </div>
+    </section>
+    <div class="gridContainer"> 
+    </div>
+  <section class="footer">
+    <div class="socialMedia">
+      <h2>THE MOVIE ROULETTE</h2>
+      <h4>by Michaela Chlebanova</h4>
+
+      <div class="followMe">
+        <p>Follow Me Around</p>
+        <a href="https://github.com" class="fa fa-github"></a>
+        <a href="https://linkedin.com/in/MimsHere" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+     
+      <div class="thankYou">
+        <p>Thanks to Joseph Norton for the Spining Wheel tutorial</p>
+        <a href="https://morioh.com/p/fda2221e7a77" class="fa-sharp fa-solid fa-link"></a>
+      </div>
+      <div class="thankYou">
+        <p>Thanks to The Movie Database for the API</p>
+          <a href="https://themoviedb.org" class="fa-sharp fa-solid fa-link"></a>
+        </div>
+      <div class="thankYou">
+        <p>Thanks to mimo_dev for the lessons</p>
+        <a href="https://dev.getmimo.com" class="fa-sharp fa-solid fa-link"></a>
+      </div> 
+   </section>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <!-- Chart JS Plugin for displaying text over chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

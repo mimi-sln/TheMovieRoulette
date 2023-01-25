@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+   background: linear-gradient(135deg, #c62bff, darkcyan);
+  }
+  .spinningWheel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .wrapper {
+    max-width: 34.37em;
+    max-height: 90vh;
+    background-color: #ffffff;
+    position: relative;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #wheel {
+    max-height: inherit;
+    width: inherit;
+    top: 0;
+    padding: 0;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  #spin-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 26%;
+    width: 26%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
+    color: #c66e16;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  .imgSpin {
+    position: absolute;
+    width: 2.5em;
+    top: 40%;
+    right: -7%;
+    transform: rotate(90deg);
+  }
+  #final-value {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #202020;
+    font-weight: 500;
+  }
+
+/*Grid css starts here*/
+.gridContainer {
+  margin-top: 130px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit,         
+  minmax(505px,1fr));
+}
+.cage {
+  background-color: whitesmoke;
+  display: flex;
+  margin-left: 5px;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  height: 335px;
+  border-radius: 15px;
+}
+.textInputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
+}
+.imageGrid {
+  position: absolute;
+  margin-left: 260px;
+  width: 242px;
+  height: 335px;
+  border-radius: 18px; 
+}
+.inputField {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 250px;
+  height: 50px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.inputField::placeholder{
+font-size: 12px;
+}
+.inputFieldOverview {
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow-y: scroll;
+  width: 250px;
+  height: 140px;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.labelNumber {
+  position: absolute; 
+  float: top;
+  margin: 0 0 305px 235px ;
+  white-space: nowrap;
+  z-index: 1;
+  font-family: 'Darker Grotesque', sans-serif;
+  background-color:darkcyan;
+  color:whitesmoke;
+  padding: 15px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/*footer starts here*/
+.footer {
+  color: whitesmoke;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #c62bff, darkcyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0 20px 0;
+  opacity: 0.1;
+  transition: 0.25s ease-in-out;
+}
+.footer:hover {
+opacity: 1;  
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialMedia p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+.followMe{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: "Poppins", sans-serif;
+
+}
+.fa {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 40px;
+  color:white;
+  background-color: transparent;
+}
+.thankYou{
+  display: flex;
+}
+
+.fa-link {
+padding-left: 10px;
+}
+
+.links {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+/*media query starts here max 1064*/
+@media screen and (max-width: 1064) {
+   .gridContainer {
+    justify-items: center;
+   }
+  
+  .wrapper {
+    font-size: 12px;
+    /*top: 8%;
+    left: 50%;*/
+  }
+  img {
+    right: -5%;
+  }
+}
+
+/*media query starts here max 768px*/
+
+  @media screen and (max-width: 768px) {
+     .gridContainer {
+     justify-items: center;
+     margin-top: 70px;
+    }
+
+    .wrapper {
+      font-size: 12px;
+      /*top: 9%;
+      left: 50%;*/
+    }
+    /*img {
+      right: -5%;
+    }*/
+  }
